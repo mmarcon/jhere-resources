@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            miniHERE Example
+        </title>
+        <style type="text/css">
+            html,body, #mapContainer {
+                font-family: sans-serif;
+                background: #fff url(resources/logo_jsday.png);
+                color: #444;
+                height: 100%;
+                padding:0;
+                margin:0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="mapContainer"></div>
+        <script src="http://api.maps.nokia.com/2.2.4/jsl.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+        <!-- This is what we are gonna build. -->
+        <script src="minihere.js"></script>
+
+        <script>$(window).load(function(){
+            $('#mapContainer').miniHERE({center:[45.439,10.972]}).miniHERE('zoom', 15);
+        });</script>
+    </body>
+</html>

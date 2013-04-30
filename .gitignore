@@ -1,0 +1,4 @@
+node_modules
+./miniHERE/minihere.js
+./miniHERE/test/spec/minihere.spec.js
+./miniHERE/index.html

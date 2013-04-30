@@ -1,0 +1,16 @@
+{
+  "name": "miniHERE",
+  "version": "0.0.0",
+  "description": "Simplified version of jHERE for step by step tutorial",
+  "main": "minihere.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Massimiliano Marcon",
+  "license": "MIT",
+  "dependencies": {
+    "uglify-js": "2.2.5",
+    "phantom-jasmine": "0.1.0"
+  }
+}
