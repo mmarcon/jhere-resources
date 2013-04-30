@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>miniHERE</title>
+    <link rel="stylesheet" type="text/css" href="docs.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>miniHERE</h1>
+            <h2>Super Easy Maps!</h2>
+        </header>
+
+        <% for (var i=0, l=sections.length; i<l; i++) { %>
+            <% var section = sections[i]; %>
+            <div id="section-<%= i + 1 %>">
+                <%= section.docsHtml %>
+            </div>
+        <% } %>
+    </section>
+
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script-->
+</body>
+</html>

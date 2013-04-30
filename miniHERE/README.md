@@ -12,6 +12,13 @@ The folder contains sort of an interactive tutorial, driven by a Makefile:
  * Step 3: miniHERE zoom method + passing unit test
  * Step 4: 3rd party dependency loader for miniHERE
  * Step 5: $.miniHERE.extend + passing unit test
+ * Step 6: Generate documentation with Docco
+ 
+## How to
+
+First of all install all the dependencies (this project requires [Node.js](http://nodejs.org/)):
+
+	npm install
 
 To get started run the following command from a terminal window:
 
@@ -22,3 +29,19 @@ This will copy the files in the right location.
 	make test
 	
 Runs the unit tests for the current step. Note that for some of the steps (1, 3) tests fail, in the spirit of TDD.
+
+## Step 6: Generate documentation with Docco
+
+Steps 6 shows how easy it is to create documentation - or potentially even a complete website for your jQuery plugin with a very minimal effort.
+
+Explore the content of the `step-6` folder to see what it is required to obtain the final documentation website:
+
+ * a CSS file
+ * a JST template file
+ * some minimal comments inline with the code
+ 
+Then try running
+
+	make doc
+	
+and open `docs/minihere.html` with a browser.

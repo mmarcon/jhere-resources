@@ -1,0 +1,46 @@
+body {
+    font-family: 'Helvetica';
+    color: #666;
+    font-weight: 100;
+}
+
+.container {
+    background: #fff;
+    width: 400px;
+    padding: 2em;
+    border: 1px solid #ccc;
+    margin: 1em auto;
+    box-shadow: 0 0 6px #ccc;
+}
+
+h1, h2, h3 {
+    color: #3579C3;
+}
+
+header {
+    background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAA/CAYAAACW2FpzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABPZJREFUeNrEWsF1m0AQRTwXoBJwBUGHHPOMKjCuwFYFhmNOlk45ClcgXIHlCoRfjjmIVGA6MKnA2Yn/+o3XLLsLrLPv8SQQC5+ZvzN/Bs2CicbX7z9T8XEutkhscxxuxVaL7fHXj2/7MdefTQDwSnzcAGDfaMS2EoCrTwUqAJLVdmJLHacWAmzuer9whDEPA0DSyMRD7j4FqLjRVnzEIx7ySlwj8+p6cYME1hw7aKGdChq0vix6PVGgII5nXlyPBZRaWIpCkc3qvvTFURMva7jzQmxL8X0B4LoRiYePfABNDL9vOOfEdwJuCkWRt1WvG5rs00xx7XDASjWlUVe6eAFaG36/4ZwT32OkV1NqnTaOYtU/W1i9tuR0I+hyOrlFsVBKi/iYWICkceczhd5NtPbooQtvQCHTigmAbmzT55jwtBkZdioBsvC56jlXVyNc7jx3cMAfQQFyefNpQBkFWofza1eXTwJ0AAWG0mWQcI6QbeakknDs3kL+kcvXSBo0/w6ixZtFqd6hyjNl5cTKQAFy+VqmWQjmIz2gF5kHayRqbgcF+uRczsoYrupTAM5GASVgqNvfirKOdLkFX0uNqi9YLb/TpNwtrDt3Bsrq9r1BCaVM3qkUaBAZaP7aIJLpGgcd2LAHJFWaD+RWgDywVs0H3tIcxMcNX+Vs/o0Fu2Id2LCnuRDDnXIBzA2KaQcKFKBAaXC5fKgltgsWl1WKBSc9zYVKcYtpEAUSgMulFoDLYyWFbjSBX9tIO+loLmQdJURtWVIQBRYyPiL0XCsgl+z3mBmhRRircDzGft1l0S13J03AieSSewugMhnkzOVzJejXfQ028Zta+izeZSaEIZVLe5Z9UsU6NWJql6WXOL5Vgv7CkMkauP9P8NprjbEgSw70SRM+Niyr6HpR94rlGuzzYznxsqd3lau8xblbesCQcSXqqSwPOCdQKkwp91YdFJhrKthEY4xCXhcA5bVzOhZadisSpLoXuWH/wBoPYxR/wSLOEbH0yMC+xlHcaEiPPZmgI1Kx2onnfG7Zmgf82wE3qR16SJI6VUey0HViLj9kpoEvAR4sOP7uprhPq1gu4iqLiyApikJFHdWubnPIXHHPfbgC23ckkXWoWKIN/s9ImcE2XZGHhycaj443iBw80Wh4Kce1XDhdCzNUSFs4uv/cITzdsfwfG6ihBZohr7dIf5WDy6RVL3qoUyk106ByuVHEb4v++6ll3X6PeVJAlOyaFXL1kqXEKwtqqBGkmSm5t0XOLRW1nxksUUO+tT2aIO1QU2ptlcNDT6oGmOEiLxoVcyvbLxrxofaUNlD2raIJrnssKQfNWylA3wSRBHrsEcZvL1ktaif+oE1g18zlcxasxprLJERGkkAzRTtqXYuLHD3F039WVShDnpjPWMh4ssjrEux66Oq1tKzsap/BK6dcONv0jzgNngLLl1kjx78qw1U9ZVJ6aVKdj3HbpZ5sNOmlqbSdmLNVVwPC1JV76z8hBFUeQb5rvIVDGrPM/Y8ega54PA47usj7wNybjzzLwkJ9AdzZe8LKLieSd0N4mVu3HRF4S4OAiD2AXDk3cjGpa4E1PQJ4DCdXzo1cBrZUNSorBM8mAFgjx/dRzfk1OIWmiL3deB4BsIE6Km1OHvOXN10PyZgSg9dOdukyaYo/ESYQDl8YZ2MWEYjfv7FfubxR5uOvAAMAmS5x0YgDp0EAAAAASUVORK5CYII=) no-repeat 50% 100%;
+    height: 150px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 44px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.4;
+}
+
+pre {
+    color: #111;
+}

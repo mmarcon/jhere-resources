@@ -24,10 +24,8 @@ describe('miniHERE', function(){
             spyOn(nokia.maps.map, 'Display').andCallThrough();
 
             $('#map').miniHERE({
-                enable: ['behavior'],
                 zoom: 12,
                 center: [52.5, 13.3],
-                type: 'map',
                 appId: 'monkey',
                 authToken: 'chimpanzee'
             });

@@ -1,4 +1,4 @@
-.PHONY: ensurestep test step steps clean
+.PHONY: ensurestep test step steps clean doc
 
 PLUGIN = minihere
 RUNNER = test/SpecRunner.html
@@ -27,7 +27,12 @@ steps:
 	@cat `ls step-*/step`
 
 clean:
-	@rm minihere.js test/spec/minihere.spec.js index.html
+	@rm minihere.js test/spec/minihere.spec.js index.html; \
+	rm -rf docs
 
 run:
 	@python -m SimpleHTTPServer 8080
+
+doc:
+	@make step to=6; \
+	./node_modules/.bin/docco -t step-6/docs.jst -c step-6/docs.css $(PLUGIN).js

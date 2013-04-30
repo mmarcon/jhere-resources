@@ -8,7 +8,8 @@
   resetSpies: true
   _JSLALoader: true,
   SPIES: true,
-  spyOn
+  spyOn,
+  spy
   */
 
 describe('miniHERE', function(){
@@ -25,6 +26,7 @@ describe('miniHERE', function(){
             $('#map').miniHERE({
                 zoom: 12,
                 center: [52.5, 13.3],
+                type: 'map',
                 appId: 'monkey',
                 authToken: 'chimpanzee'
             });
@@ -55,6 +57,23 @@ describe('miniHERE', function(){
             //method od Display
             /*4*/
             expect(SPIES.display_set).toHaveBeenCalledWith('zoomLevel', 16);
+        });
+    });
+
+    describe('extensions', function(){
+        it('executes extensions code', function(){
+            var unicorn = spy('The unicorn function');
+            $.miniHERE.extend('unicorn', unicorn);
+
+            $('#map').miniHERE({
+                zoom: 12,
+                center: [52.5, 13.3],
+                appId: 'monkey',
+                authToken: 'chimpanzee'
+            });
+
+            $('#map').miniHERE('unicorn', 'pink');
+            expect(unicorn).toHaveBeenCalledWith('pink');
         });
     });
 });

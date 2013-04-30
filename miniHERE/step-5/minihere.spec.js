@@ -24,10 +24,8 @@ describe('miniHERE', function(){
             spyOn(nokia.maps.map, 'Display').andCallThrough();
 
             $('#map').miniHERE({
-                enable: ['behavior'],
                 zoom: 12,
                 center: [52.5, 13.3],
-                type: 'map',
                 appId: 'monkey',
                 authToken: 'chimpanzee'
             });
@@ -47,10 +45,8 @@ describe('miniHERE', function(){
 
         it('sets a new zoom level for the map', function(){
             $('#map').miniHERE({
-                enable: ['behavior'],
                 zoom: 12,
                 center: [52.5, 13.3],
-                type: 'map',
                 appId: 'monkey',
                 authToken: 'chimpanzee'
             });
@@ -69,10 +65,8 @@ describe('miniHERE', function(){
             $.miniHERE.extend('unicorn', unicorn);
 
             $('#map').miniHERE({
-                enable: ['behavior'],
                 zoom: 12,
                 center: [52.5, 13.3],
-                type: 'map',
                 appId: 'monkey',
                 authToken: 'chimpanzee'
             });
