@@ -1,4 +1,4 @@
-.PHONY: ensurestep test step clean
+.PHONY: ensurestep test step steps clean
 
 PLUGIN = minihere
 RUNNER = test/SpecRunner.html
@@ -22,6 +22,9 @@ step:
 	@cp step-$(to)/$(PLUGIN).js .; \
 	cp step-$(to)/index.html .; \
 	cp step-$(to)/$(PLUGIN).spec.js ./test/spec/.
+
+steps:
+	@cat `ls step-*/step`
 
 clean:
 	@rm minihere.js test/spec/minihere.spec.js index.html

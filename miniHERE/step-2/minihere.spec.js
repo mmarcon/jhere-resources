@@ -31,6 +31,11 @@ describe('miniHERE', function(){
                 authToken: 'chimpanzee'
             });
 
+            /*0*/
+            expect(nokia.maps.util.ApplicationContext.set).toHaveBeenCalled();
+            expect(nokia.maps.util.ApplicationContext.set.mostRecentCall.args[0].appId).toBe('monkey');
+            expect(nokia.maps.util.ApplicationContext.set.mostRecentCall.args[0].authenticationToken).toBe('chimpanzee');
+
             /*1*/
             expect(nokia.maps.map.component.Behavior).toHaveBeenCalled();
             /*2*/
