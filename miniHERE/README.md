@@ -30,6 +30,14 @@ This will copy the files in the right location.
 	
 Runs the unit tests for the current step. Note that for some of the steps (1, 3) tests fail, in the spirit of TDD.
 
+**Note:** if Phantom.JS is not installed in the system, `make test` will return an error:
+
+	PhantomJS not installed.  Run the tests from the browser
+	
+In this case just open `miniHERE/test/SpecRunner.html` with your favourite browser: the tests will be run in the browser and you will be able to see the test report (see screenshot below).
+
+![Test Results in Webkit Browser](https://raw.github.com/mmarcon/jhere-resources/master/miniHERE/testresults.png)
+
 ## Step 6: Generate documentation with Docco
 
 Steps 6 shows how easy it is to create documentation - or potentially even a complete website for your jQuery plugin with a very minimal effort.
