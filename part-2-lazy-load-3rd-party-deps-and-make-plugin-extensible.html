@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Lazy load 3rd party dependencies and make plugin extensible</title>
+    <link href='http://fonts.googleapis.com/css?family=Average|Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="/" class="home">← Home</a></li>
+                <li><a href="part-1-write-jquery-plugins-with-tdd.html">Part 1<span> Write jQuery Plugins with TDD</span></a></li>
+                <li><a href="part-2-lazy-load-3rd-party-deps-and-make-plugin-extensible.html" class="active">Part 2<span> Lazy load 3<sup>rd</sup> party deps and make plugin extensible</span></a></li>
+                <li><a href="part-3-make-it-work-with-jquery-like-libs.html">Part 3<span> Make it work with jQuery-like libs</span></a></li>
+                <li><a href="document-your-plugin.html">(*)<span> Document your plugin</span></a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1 id="third-parties-extensible">Part 2: Lazy load 3<sup>rd</sup> party deps and make plugin extensible</h1>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="mmarcon" data-related="mmarcon" data-hashtags="jhere">Tweet</a>
+        </header>
+        <section>
+            <header>
+                <h2>Resources</h2>
+            </header>
+            <ul>
+                <li>The <a href="http://api.jquery.com/category/deferred-object/">Deferred object</a> is a chainable utility object created by calling the <code>jQuery.Deferred()</code> method. It can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.</li>
+                <li>JavaScript <a href="http://wiki.commonjs.org/wiki/Promises">Promises</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Lazy_loading">Lazy loading</a> is a design pattern commonly used in computer programming to defer initialization of an object until the point at which it is needed. It can contribute to efficiency in the program's operation if properly and appropriately used.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</body>
+</html>

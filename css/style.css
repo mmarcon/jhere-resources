@@ -1,0 +1,214 @@
+/*
+
+    $jhereCoral: #ff7f50;
+    $jhereGreen: #86c440;
+    $jhereLightGreen: #9fd067;
+    $hereBlue: #3579C3;
+    $jsday: #65699a;
+
+*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #ddd;
+    font-family: 'Average', sans-serif;
+    background: #222;
+}
+
+.wrapper {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 960px;
+    /*background: #eee;*/
+}
+
+header {
+    position: relative;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+    color: #999;
+    text-shadow: 1px 1px 1px #666;
+    font-size: 3rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+    color: #eee;
+}
+
+#home h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+#home h2 {
+    font-size: 3rem;
+}
+
+section {
+    font-size: 1.8rem;
+}
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    font-style: italic;
+}
+
+ul, dl {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+dl {
+    padding-left: 0;
+}
+
+li, dd, dt {
+    margin: .5rem 1rem .5rem 0;
+}
+
+dd {
+    padding-bottom: 2.5rem;
+}
+
+section li:before {
+    content: "★";
+    position: relative;
+    left: -10px;
+    top: -2px;
+    font-size: 1.2rem;
+    color: #86c440;
+}
+
+section a:link, section a:visited {
+    text-decoration: none;
+    color: #fff;
+    background: #9fd067;
+    display: inline-block;
+    padding: 3px 4px;
+    border-radius: 3px;
+    -webkit-transition: background .5s ease-in;
+    -moz-transition: background .5s ease-in;
+    -o-transition: background .5s ease-in;
+    -ms-transition: background .5s ease-in;
+    transition: background .5s ease-in;
+}
+
+section a:hover, section a:active {
+    background: #86c440;
+}
+
+nav ul {
+    margin: 2rem 0 4rem 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a:link, nav a:visited {
+    font-family: 'Fjalla One', sans-serif;
+    color: #eee;
+    background: transparent;
+    margin: 0 .2rem 0 0;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+
+nav a:hover, nav a:active, nav a.active {
+    color: #9fd067;
+}
+
+nav a span {
+    position: absolute;
+    bottom: -1.8rem;
+    left: 0;
+    display: none;
+    font-size: 1.2rem;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    width: 50rem;
+}
+
+nav a:hover span {
+    display: inline;
+}
+
+footer {
+    font-family: 'Fjalla One', sans-serif;
+    border-top: 1px solid #333;
+    position: relative;
+    min-height: 6rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #444;
+}
+
+footer a:link, footer a:visited {
+    background: transparent;
+    text-decoration: none;
+    color: #9fd067;
+    display: inline-block;
+}
+
+footer a:hover, footer a:active {
+    text-decoration: underline;
+}
+
+a.cc:link, a.cc:visited {
+    width: 88px;
+    height: 31px;
+    position: absolute;
+    top: .5rem;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    opacity: 0.5;
+    -webkit-transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+    -ms-transition: opacity .3s ease-in;
+    transition: opacity .3s ease-in;
+}
+
+a.cc:hover {
+    opacity: 1;
+}
+
+
+
+/*Social buttons*/
+.twitter-share-button {
+    position: absolute;
+    right: 0;
+    top: 1.1rem;
+}
+
+#home .twitter-share-button {
+    top: 50%;
+}
+
+@media only screen and (max-width : 850px) {
+    .twitter-share-button {
+        display: none;
+    }
+}
