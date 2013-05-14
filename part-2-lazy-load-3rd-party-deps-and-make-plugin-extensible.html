@@ -57,7 +57,7 @@
                 The Deferred Object can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
             </blockquote>
             <p>
-                In jHERE I creaded a <a href="">script loader</a> that uses deferreds to enqueue methods calls. Only once the Deferred is resolved the initialization happens and all the methods are call in the order they were enqueued.
+                In jHERE I creaded a <a href="https://github.com/mmarcon/jhere/blob/master/src/jhere.js#L649">script loader</a> that uses deferreds to enqueue methods calls. Only once the Deferred is resolved the initialization happens and all the methods are call in the order they were enqueued.
             </p>
             <p>
                 After I released the first version of jHERE, I realized there were some features that were missing. Features that aren't useful all the times, but that can be nice to have sometimes: routing, shapes, or geocoding/reverse geocoding helpers.
@@ -69,7 +69,7 @@
                 Luckily, beacuse of the way the plugin is structured, we can just expose the plugin's prototype via a <em>static method</em>. This makes very easy to add extensions that make new methods available via the plugin's jQuery UI-like interface.
             </p>
             <p>
-                Have a look at how that is done in <a href="">jHERE's source code</a>.
+                Have a look at how that is done in <a href="https://github.com/mmarcon/jhere/blob/master/src/jhere.js#L715">jHERE's source code</a>.
             </p>
         </section>
         <section>
