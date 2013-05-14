@@ -26,6 +26,54 @@
         </header>
         <section>
             <header>
+                <h2>Notes</h2>
+            </header>
+            <p>
+                Let's now try to make our plugin better. We started with the assumption that a 3rd party dependency - the HERE Maps API - is included in the document with a script tag.
+            </p>
+            <p>
+                However, in order to make life easier for people that use your plugin we can go a little beyond that. To simplify life for others, sometimes you have to complicate yours. But that is the fun part.
+            </p>
+            <p>
+                Let's keep making life easy for users of our plugin: we are wrapping a 3rd party library, 'cause their API is really hard to use. Why should developers bother to drop a script tag to load the 3rd party library, and take care of keeping it up to date? Can't we do it within our plugin instead?
+            </p>
+            <p>
+                The first thing we can try to do is dropping into our plugin some code that does the following:
+            </p>
+            <ol>
+                <li>creates a script DOM Element</li>
+                <li>sets the source attribute to the 3rd-party dependency's URL</li>
+                <li>adds an onload callback that only initializes the plugin only when the script has loaded and we append the element to the page</li>
+            </ol>
+            <p>
+                This does not work very well. The 3rd party script is loaded asynchronously, therefore if we chain method calls right after the plugin initialization:
+                <pre><code>$('.selector').miniHERE({}).miniHERE('zoom', 16).miniHERE('center', [lat, lon]);</code></pre>
+                the plugin will try to execute them immediately, before the external script has loaded, and will therefore fail as objects and method will not be there.
+            </p>
+            <p>
+                We can solve this problem by taking advantage of jQuery's Deferred object.
+            </p>
+            <blockquote>
+                The Deferred Object can register multiple callbacks into callback queues, invoke callback queues, and relay the success or failure state of any synchronous or asynchronous function.
+            </blockquote>
+            <p>
+                In jHERE I creaded a <a href="">script loader</a> that uses deferreds to enqueue methods calls. Only once the Deferred is resolved the initialization happens and all the methods are call in the order they were enqueued.
+            </p>
+            <p>
+                After I released the first version of jHERE, I realized there were some features that were missing. Features that aren't useful all the times, but that can be nice to have sometimes: routing, shapes, or geocoding/reverse geocoding helpers.
+            </p>
+            <p>
+                Rather than just dropping all those features into the codebase – which will make the plugin bigger and harder to maintain –, I looked for a way to make the plugin extensible.
+            </p>
+            <p>
+                Luckily, beacuse of the way the plugin is structured, we can just expose the plugin's prototype via a <em>static method</em>. This makes very easy to add extensions that make new methods available via the plugin's jQuery UI-like interface.
+            </p>
+            <p>
+                Have a look at how that is done in <a href="">jHERE's source code</a>.
+            </p>
+        </section>
+        <section>
+            <header>
                 <h2>Resources</h2>
             </header>
             <ul>

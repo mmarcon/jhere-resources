@@ -14,7 +14,7 @@ html {
 
 body {
     color: #ddd;
-    font-family: 'Average', sans-serif;
+    font-family: 'Average', 'Helvetica', sans-serif;
     background: #222;
 }
 
@@ -30,9 +30,8 @@ header {
 }
 
 h1 {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', 'Helvetica', sans-serif;
     font-weight: 400;
-    color: #999;
     text-shadow: 1px 1px 1px #666;
     font-size: 3rem;
     border-bottom: 1px solid #333;
@@ -80,7 +79,7 @@ dd {
     padding-bottom: 2.5rem;
 }
 
-section li:before {
+section ul li:before {
     content: "★";
     position: relative;
     left: -10px;
@@ -153,7 +152,7 @@ nav a:hover span {
 }
 
 footer {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', 'Helvetica', sans-serif;
     border-top: 1px solid #333;
     position: relative;
     min-height: 6rem;

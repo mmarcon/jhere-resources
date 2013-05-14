@@ -26,6 +26,39 @@
         </header>
         <section>
             <header>
+                <h2>Notes</h2>
+            </header>
+            <p>
+                When I finished the first implementation of jHERE I looked at the code and wondered whether that could work with <a href="http://zeptojs.com/">Zepto</a> as well.
+            </p>
+            <p>
+                Later on I found out that Zepto is not the only library featuring a jQuery-like API. There is a universe of libraries (Tire, Kimbo, etc.) that aim at the simplicity of jQuery but at the same time try to keep the codebase small and fast.
+            </p>
+            <p>
+                I decided that making jHERE compatible with Zepto and in my specific case Tire was worth the effort and the little time spent on it.
+            </p>
+            <p>
+                Why bother in the first place? You make a jQuery plugin and whoever wants to use it can just include jQuery, end of the story. Right? Well, there are at least a couple of good reasons that justify the effort.
+            </p>
+            <p>
+                Reason number one, as you might have already guessed is <strong>bandwidth</strong>. Not all users will visit your app over a 100Mbit broadband connection. There are people that still browse the internet through a crappy connection or users that look at your website with a mobile phone, and note that 3G and 4G are not always available.
+            </p>
+            <p>
+                Reason number two is <strong>parsing time</strong>. I don't know how many of you looked at performance from this angle before. Computers are generally fast, but other devices, tablets and mobile phones are generally slower, so it might take a while for the JS engine to parse your code. Additionally, the more processing the sooner the device runs out of battery.
+            </p>
+            <p>
+                So next time you are about to drop a script tag that points to jQuery into your code think whether you really need it. And next time you make a jQuery plugin, consider to make it compatible with other jQuery-like libraries, it isn't super hard.
+            </p>
+            <ol>
+                <li>Try to keep the amount of stuff, convenience methods and fancy selectors that you use from jQuery to the minimum.</li>
+                <li>Once you plugin works with jQuery, if there is something missing in Zepto to make it work then add it. Since you want to keep the code footprint as low as possible, add only what is needed. Don't try to reimplement jQuery, otherwise once could have just used that in the first place.</li>
+                <li>
+                    The third point is read documentation and if necessary source code of the library you are trying to be compatible with. It is the only way to get things done properly. And let's not forget that there is a lot to learn from the work of other people. Plus you might discover some interesting things and potential issues.
+                </li>
+            </ol>
+        </section>
+        <section>
+            <header>
                 <h2>Resources</h2>
             </header>
             <ul>

@@ -26,6 +26,41 @@
         </header>
         <section>
             <header>
+                <h2>Notes</h2>
+            </header>
+            <p>
+                jHERE was born almost 2 years ago – it was still called jOVI back then. I built the very first version of it before I interviewed for a job at Nokia. I had a phone call with a recruiter that offered me the opportunity to work at Nokia Maps in Berlin. The job seemed interesting, so before they called me for the technical interviews I did my homeworks, looked at the product they were building, the public APIs they had, etc.
+            </p>
+            <p>
+                I was already familiar with Google Maps, and I was trying to familiarize myself with the Ovi maps API. The 2 APIs had lots of similarities, but they had one in particular, which is a commonality of many maps APIs out there: they were damn hard to use and remember.
+            </p>
+            <p>
+                Therefore, as an exercise I implemented a simple jQuery wrapper to make things easy.
+            </p>
+            <p>
+                This is how the plugin was born. Since then it changed a lot, and so did my way of working.
+            </p>
+            <p>
+                In October/November 2012 at Nokia we were working very hard to launch a new brand, HERE.com: I decided it was a good occasion to revamp jOVI and I made jHERE.
+            </p>
+            <p>
+                Every night for a couple of weeks I would go home and work on jHERE. Then I made a pretty website. So far 25K people have seen it, and in general developers seem to like it. I personally love it, jHERE is so simple I can prototype complex location or map apps in minutes.
+            </p>
+            <p>
+                "jHERE deconstructed" follows the journey from the initial idea to the current version of jHERE. I am not saying this is the only way you should be making jQuery plugins, it is just my way. However there are perhaps some concepts, ideas and tools that can be useful for you if you ever decide to build plugins for jQuery.
+            </p>
+            <p>
+                To follow this journey we will look step by step at <a href="">miniHERE</a>. We will first setup a boilerplate that can be used as the base for any jQuery plugin.
+            </p>
+            <p>
+                Then we'll have a look at test driven development, mock objects and spies. We will use <a href="http://pivotal.github.io/jasmine/">Jasmine</a> to setup our tests, establish our expectations, make the tests fail and then write the code that makes them pass.
+            </p>
+            <p>
+                You can follow this step by step tutorial by looking at the <a href="">Github repository</a> (start with the <a href="">README file</a>).
+            </p>
+        </section>
+        <section>
+            <header>
                 <h2>Tools</h2>
             </header>
             <ul>
@@ -47,7 +82,9 @@
                 <li><a href="http://en.wikipedia.org/wiki/Test-driven_development">TDD on Wikipedia</a></li>
                 <li><a href="http://blog.pluralsight.com/2012/09/11/tdd-vs-bdd/">TDD vs BDD</a></li>
                 <li><a href="http://en.wikipedia.org/wiki/Dynamic_programming_language">Dynamic programming language</a></li>
-                <li><a href="http://en.wikipedia.org/wiki/Mock_object">Mock Objects</a></li>
+                <li>
+                    <em>In object-oriented programming, <a href="http://en.wikipedia.org/wiki/Mock_object">mock objects</a> are simulated objects that mimic the behavior of real objects in controlled ways. A programmer typically creates a mock object to test the behavior of some other object, in much the same way that a car designer uses a crash test dummy to simulate the dynamic behavior of a human in vehicle impacts.</em>
+                    <!-- <a href="http://en.wikipedia.org/wiki/Mock_object">Mock Objects</a></li> -->
                 <li><a href="http://coding.smashingmagazine.com/2011/10/11/essential-jquery-plugin-patterns/">Essential jQuery Plugin Patterns</a> by Addy Osmani</li>
                 <li><a href="http://jqueryboilerplate.com/">jQuery Boilerplate</a> Jump-starting jQuery plugins development</li>
             </ul>
