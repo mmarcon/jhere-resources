@@ -2,129 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Coming soon</title>
-    <link href='http://fonts.googleapis.com/css?family=Copse|Oswald' rel='stylesheet' type='text/css'>
-    <!--[if IE]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <style>
-        body {
-            height: 100%;
-            background: #222;
-            font-size: 20px;
-            font-family: 'Oswald', sans-serif;
-            color: #222;
-        }
-        .container {
-            position: relative;
-            z-index: 0;
-            margin: 80px auto 20px auto;
-            max-width: 940px;
-        }
-
-        h1 {
-            text-align: center;
-            color: #ff6347;
-            color: #eee;
-            text-transform: uppercase;
-            font-size: 72px;
-            margin: 0;
-        }
-
-        section {
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        section div {
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            margin: 0 10px;
-            width: 80px;
-            height: 100px;
-            position: relative;
-            background: #222;
-        }
-
-        .unit {
-            text-transform: uppercase;
-            font-size: 14px;
-            position: absolute;
-            bottom: 0;
-            left: -2px;
-            right: -2px;
-            text-align: center;
-            border: 1px solid #ccc;
-            padding: 3px;
-            margin-bottom: 3px;
-            background: #fff;
-        }
-
-        .number {
-            font-size: 52px;
-            color: #fff;
-            line-height: 1.25;
-        }
-
-        footer {
-            margin-top: 80px;
-            position: absolute;
-            bottom: 5px;
-            left: 0;
-            right: 0;
-            padding: 3px;
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 14px;
-        }
-
-    </style>
+    <title>So you wanna make a jQuery plugin... jHERE deconstructed</title>
+    <link href='http://fonts.googleapis.com/css?family=Average|Fjalla+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 
-<body>
-    <div class="container">
+<body id="home">
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="/" class="home active">← Home</a></li>
+                <li><a href="part-1-write-jquery-plugins-with-tdd.html">Part 1<span> Write jQuery Plugins with TDD</span></a></li>
+                <li><a href="part-2-lazy-load-3rd-party-deps-and-make-plugin-extensible.html">Part 2<span> Lazy load 3<sup>rd</sup> party deps and make plugin extensible</span></a></li>
+                <li><a href="part-3-make-it-work-with-jquery-like-libs.html">Part 3<span> Make it work with jQuery-like libs</span></a></li>
+                <li><a href="document-your-plugin.html">(*)<span> Document your plugin</span></a></li>
+            </ul>
+        </nav>
         <header>
-            <h1>Coming Soon</h1>
+            <h1>jHERE deconstructed</h1>
+            <a href="https://twitter.com/share" class="twitter-share-button" data-via="mmarcon" data-related="mmarcon" data-hashtags="jhere">Tweet</a>
         </header>
         <section>
-            <div class="days"><span class="number">0</span><span class="unit">Days</span></div>
-            <div class="hours"><span class="number">0</span><span class="unit">Hours</span></div>
-            <div class="minutes"><span class="number">0</span><span class="unit">Minutes</span></div>
-            <div class="seconds"><span class="number">0</span><span class="unit">Seconds</span></div>
+            <header>
+                <h2>Maps Made Easy</h2>
+                <blockquote cite="http://jhere.net">
+                    With <a href="http://jhere.net">jHERE</a>, you can easily add interactive maps to your website. In only 5KB (2KB Gzipped), you get a powerful map API, highly customizable markers, event handling and info bubbles. Bonus features are KML support and data visualization via heatmaps.
+                </blockquote>
+                <p>
+                    You can find the documentation <a href="http://jhere.net/docs.html">here</a> and contribute to the project by <a href="https://github.com/mmarcon/jhere">forking it</a> on Github.
+                </p>
+            </header>
         </section>
+        <section>
+            <header>
+                <h2>Slides</h2>
+                <p>Coming soon.</p>
+                <!-- <p>
+                    Slides are available on <a href="#">Speaker Deck</a>.
+                </p>
+                <p>
+                    <script async class="speakerdeck-embed" data-id="5049c0cab8fe2d000205c094" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+                </p> -->
+            </header>
+        </section>
+        <section>
+        <section>
+            <header>
+                <h2>Handouts</h2>
+            </header>
+            <dl>
+                <dt><a href="part-1-write-jquery-plugins-with-tdd.html">Part 1: Write jQuery Plugins with TDD</a></dt>
+                <dd>What is Test Driven Development? How do you write mocks? What are spies? How do you run unit tests for JavaScript and in particular for jQuery plugins?</dd>
+                <dt><a href="part-2-lazy-load-3rd-party-deps-and-make-plugin-extensible.html">Part 2: Lazy load 3<sup>rd</sup> party deps and make plugin extensible</a></dt>
+                <dd>We are wrapping a 3rd party library, beacuse the API is really hard to use. Why should a developer bother to drop a script tag to load the 3rd party library, and take care of keeping it up to date? Can't we do it within our plugin instead? And how can we make the plugin extensible so we keep the code small and add functionalities as plugins for the plugin?</dd>
+                <dt><a href="part-3-make-it-work-with-jquery-like-libs.html">Part 3: Make it work with jQuery-like libs</a></dt>
+                <dd>We have a jQuery plugin that works pretty well, and it is easy to use. There are however some environments where you don't really want to use jQuery, for instance jQuery is not great when it comes to mobile devices. It isn't only a matter of bytes over the wire, it is also a matter of time it takes for the browser to parse the whole jQuery code. So, how can we make our plugin compatible with smaller/faster libraries?</dd>
+                <dt><a href="document-your-plugin.html">(*) Document your plugin</a></dt>
+                <dd>Bonus section: documentation. How can we document our code so we can easily export some useful documentation for the developers that will use it?</dd>
+            </dl>
+        </section>
+        <section>
+            <header>
+                <h2>miniHERE</h2>
+            </header>
+            <p>
+                miniHERE is a smaller version of jHERE: it is a jQuery plugin that wraps the HERE maps API  and makes it easy to add maps to websites and programmatically change the zoom level of the map. It has a zoom bar and supports drag and mouse wheel for pan and zoom.
+            </p>
+            <p>
+                The source code is available on the <a href="https://github.com/mmarcon/jhere-resources/tree/master/miniHERE">jhere-resources repository</a>. In there you'll find step by step guidance to building miniHERE with TDD, loading 3<sup>rd</sup> party dependencies via <code>$.Deferred</code> and creating a mini-website by taking advantage of the fantastic Docco.
+            </p>
+            <p>
+                You will need Node.js and npm to install everything that is needed to follow the tutorial. Phantom.JS is optional but nice to have.
+            </p>
+        </section>
+        <section>
+            <header>
+                <h2>Get in touch</h2>
+            </header>
+            <p>
+                You can <a href="http://twitter.com/mmarcon">get in touch with me on Twitter</a> or just email me at <a class="email" href="">max at jhere dot net</a>.
+            </p>
+        </section>
+        <footer>
+            <p>Created by <a href="http://twitter.com/mmarcon">Massimiliano Marcon</a></p>
+            <a href="http://creativecommons.org/licenses/by-nc/3.0/" class="cc"><img src="img/cc.png"></a>
+        </footer>
     </div>
-    <footer>
-        <small>Massimiliano Marcon &copy; 2013</small>
-    </footer>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+    <a href="https://github.com/mmarcon/jhere-resources"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
     <script>
-    $(function(){
-        var when = 1368640800000;
-        function getDifference() {
-            var diff = when - Date.now();
-            return {
-                diff : diff,
-                ms : Math.floor(diff % 1000 ),
-                s  : Math.floor(diff / 1000 % 60),
-                m  : Math.floor(diff / 60000 % 60),
-                h  : Math.floor(diff / 3600000 % 24),
-                d  : Math.floor(diff / 86400000)
-            };
-        }
-
-        function render(){
-            var d = getDifference();
-            $('.days .number').text(d.d);
-            $('.hours .number').text(d.h);
-            $('.minutes .number').text(d.m);
-            $('.seconds .number').text(d.s);
-            setTimeout(render, 300);
-        }
-
-        render();
-
-    });
+        window.onload = function(){
+            var email = document.querySelector('.email');
+            email.setAttribute('href', 'mailto:max@jhere.net');
+            email.innerHTML = 'max@jhere.net';
+        };
     </script>
+
+<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+<script src="js/main.js"></script> -->
 </body>
 </html>
